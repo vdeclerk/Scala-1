@@ -1,8 +1,10 @@
 package Mathematics
 
-import org.scalatest.FlatSpec
+import org.scalatest._
+import flatspec._
+import matchers._
 
-class AbsSpec extends FlatSpec {
+class AbsSpec extends AnyFlatSpec with should.Matchers {
 
   "abs spec 1" should "output the correct Integer as a result" in {
     assert(Abs.abs(-1) === 1)

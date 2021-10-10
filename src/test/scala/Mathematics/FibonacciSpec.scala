@@ -1,8 +1,10 @@
 package Mathematics
 
-import org.scalatest.FlatSpec
+import org.scalatest._
+import flatspec._
+import matchers._
 
-class FibonacciSpec extends FlatSpec {
+class FibonacciSpec extends AnyFlatSpec with should.Matchers {
 
   "FibonacciSpec 1" should "output the correct sequence of the first 40 fib numbers" in {
     assert(Fibonacci.fibGenerate(40) === Seq(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597,

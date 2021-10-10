@@ -15,9 +15,8 @@ object LinearSearch {
       if (index == arr.length) -1
       else if (arr(index) == elem) index
       else iter(index + 1)
-    }
 
     iter(0)
   }
-
 }
+

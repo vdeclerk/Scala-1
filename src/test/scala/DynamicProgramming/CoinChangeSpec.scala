@@ -1,8 +1,10 @@
 package DynamicProgramming
 
-import org.scalatest.FlatSpec
+import org.scalatest._
+import flatspec._
+import matchers._
 
-class CoinChangeSpec extends FlatSpec  {
+class CoinChangeSpec extends AnyFlatSpec with should.Matchers {
   "Coin Change 1" should "return the number of combinations for the amount1" in {
 
     assert(CoinChange.coinChange(List(1,2), 4) === 3)

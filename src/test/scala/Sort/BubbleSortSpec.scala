@@ -1,8 +1,10 @@
 package Sort
 
-import org.scalatest.FlatSpec
+import org.scalatest._
+import flatspec._
+import matchers._
 
-class BubbleSortSpec extends FlatSpec {
+class BubbleSortSpec extends AnyFlatSpec with should.Matchers {
 
   "A Bubble Sort" should "return a sorted version of an array passed to it" in {
     val arr = Array(3,2,7,1,9,0)
